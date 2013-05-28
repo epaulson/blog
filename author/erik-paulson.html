@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Hadoop Internals - Articles by Erik Paulson</title>
+  <meta name="author" content="Erik Paulson">
+
+    
+  
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="http://epaulson.github.io/favicon.png" rel="icon">
+  <link href="http://epaulson.github.io/theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+  <script src="http://epaulson.github.io/theme/js/modernizr-2.0.js"></script>
+  <script src="http://epaulson.github.io/theme/js/ender.js"></script>
+  <script src="http://epaulson.github.io/theme/js/octopress.js" type="text/javascript"></script>
+
+  <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head><body>
+  <header role="banner"><hgroup>
+  <h1><a href="http://epaulson.github.io/">Hadoop Internals</a></h1>
+      <h2>a.k.a How the fuck does that get called?</h2>
+  </hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://epaulson.github.io/" rel="subscribe-rss">RSS</a></li>
+  </ul>
+
+<!-- TODO: add search here
+<form action="" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:http://epaulson.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+-->
+
+<ul class="main-navigation">
+  <li><a href="http://epaulson.github.io/">Blog</a></li>
+            <!-- TODO: add categories here? -->
+  </ul></nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+    	  		<article>
+    		<header>
+          <h1 class="entry-title">
+        <a href="http://epaulson.github.io/HadoopInternals/first-post.html">What this blog will be about</a>
+      </h1>
+          <p class="meta"><time datetime="2013-05-27T10:00:00" pubdate>Mon 27 May 2013</time></p>
+</header>
+
+  <div class="entry-content">
+
+<h3>Some Motivation</h3>
+<p>The other day, I woke up with what I thought would be a simple task: "Let's figure out how hard would it be to store the edit log of the Hadoop NameNode in a relational database." 
+After all, I knew the NameNode already had multiple options for storing its edit log, either by putting in on disk itself, or by using the Quorum Journal Manager. 
+This should be task of just finding the right class and either slipping in a new subclass or implementing some interface. </p>
+<p>Of course, nothing is ever that simple.
+</div>
+  <footer>
+    <a rel="full-article" href="http://epaulson.github.io/HadoopInternals/first-post.html">Read On &crarr;</a>
+  </footer>
+  		</article>
+  	  	<div class="pagination">
+  
+    <br />
+</div>  </div>
+      <aside class="sidebar">
+  <section>
+    <h1>Recent Posts</h1>
+    <ul id="recent_posts">
+            <li class="post">
+          <a href="http://epaulson.github.io/HadoopInternals/first-post.html">What this blog will be about</a>
+      </li>
+          </ul>
+  </section>
+    <section>
+      
+    <h1>Categories</h1>
+    <ul id="recent_posts">
+              <li><a href="http://epaulson.github.io/category/namenode.html">Namenode</a></li>
+          </ul>
+  </section>
+   
+
+  <section>
+  <h1>Tags</h1>
+    </section>
+
+    
+      <section>
+        <h1>Blogroll</h2>
+        <ul>
+                    <li><a href="http://getpelican.com/" target="_blank">Pelican</a></li>
+                    <li><a href="http://hadoop.apache.org/docs/current/api/overview-summary.html" target="_blank">Hadoop API</a></li>
+                    <li><a href="https://issues.apache.org/jira/browse/HADOOP" target="_blank">Hadoop Jira</a></li>
+                </ul>
+    </section>
+  <section>
+    <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("erik_paulson", 5, false);
+    });
+  </script>
+  <script src="/theme/js/twitter.js" type="text/javascript"> </script>
+        <a href="http://twitter.com/erik_paulson" class="twitter-follow-button" data-show-count="false">Follow @erik_paulson</a>
+  </section>
+  </aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Erik Paulson -
+  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+</p></footer>
+    <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+</body>
+</html>

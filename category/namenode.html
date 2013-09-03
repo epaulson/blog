@@ -28,7 +28,7 @@
 </head><body>
   <header role="banner"><hgroup>
   <h1><a href="http://epaulson.github.io/">Hadoop Internals</a></h1>
-      <h2>a.k.a How the fuck does that get called?</h2>
+      <h2>a.k.a How the heck does that get called?</h2>
   </hgroup></header>
   <nav role="navigation"><ul class="subscription" data-subscription="rss">
   <li><a href="http://epaulson.github.io/" rel="subscribe-rss">RSS</a></li>
@@ -51,6 +51,24 @@
     <div id="content">
       <div class="blog-index">
     	  		<article>
+    		<header>
+          <h1 class="entry-title">
+        <a href="http://epaulson.github.io/HadoopInternals/benchmarks.html">HDFS Benchmarks</a>
+      </h1>
+          <p class="meta"><time datetime="2013-08-28T10:00:00" pubdate>Wed 28 August 2013</time></p>
+</header>
+
+  <div class="entry-content">
+
+<h3>Asking the Right Questions</h3>
+<p>I'm interested in benchmarking the HDFS NameNode, and to be able to understand the impact of different mixes of operations and workloads. As part of this, I've been reviewing Hadoop Benchmarks. I've been trying to limit my focus to benchmarks that make the HDFS their primary focus, as opposed to benchmarks that try to be representative of a MapReduce workload. </p>
+<p>What follows in this post are a few thoughts on the challenges of trying to focus on the NameNode in an HDFS benchmark, a quick survey of about 10 different benchmarks, and some ideas as to what could be included in a new benchmark for a NameNode or its equivalent in a distributed file system.
+</div>
+  <footer>
+    <a rel="full-article" href="http://epaulson.github.io/HadoopInternals/benchmarks.html">Read On &crarr;</a>
+  </footer>
+  		</article>
+  	  		<article>
     		<header>
           <h1 class="entry-title">
         <a href="http://epaulson.github.io/HadoopInternals/first-post.html">What this blog will be about</a>
@@ -78,6 +96,9 @@ This should be task of just finding the right class and either slipping in a new
   <section>
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
+            <li class="post">
+          <a href="http://epaulson.github.io/HadoopInternals/benchmarks.html">HDFS Benchmarks</a>
+      </li>
             <li class="post">
           <a href="http://epaulson.github.io/HadoopInternals/first-post.html">What this blog will be about</a>
       </li>

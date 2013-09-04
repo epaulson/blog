@@ -23,7 +23,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href="#newbenchmark"&gt;Towards a new benchmark for the NameNode and Namenode-like components&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="#qual1"&gt;Portable and easy to implementable on different systems&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#qual1"&gt;Portable and easy to implement on different systems&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#qual2"&gt;Do not require full stack&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#qual3"&gt;Separate data generation from benchmark driver&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#qual4"&gt;Operate on a mix of input data&lt;/a&gt;&lt;/li&gt;

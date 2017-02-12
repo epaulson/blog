@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Hadoop Internals</title><link href="http://epaulson.github.io/" rel="alternate"></link><link href="http://epaulson.github.io/feeds/namenode.atom.xml" rel="self"></link><id>http://epaulson.github.io/</id><updated>2013-08-28T10:00:00-05:00</updated><entry><title>HDFS Benchmarks</title><link href="http://epaulson.github.io/HadoopInternals/benchmarks.html" rel="alternate"></link><updated>2013-08-28T10:00:00-05:00</updated><author><name>Erik Paulson</name></author><id>tag:epaulson.github.io,2013-08-28:HadoopInternals/benchmarks.html</id><summary type="html">&lt;hr /&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Erik Paulson's Blog - Namenode</title><link href="http://blog.unit1127.com/" rel="alternate"></link><link href="http://blog.unit1127.com/feeds/namenode.atom.xml" rel="self"></link><id>http://blog.unit1127.com/</id><updated>2013-08-28T10:00:00-05:00</updated><entry><title>HDFS Benchmarks</title><link href="http://blog.unit1127.com/blog/2013/08/28/benchmarks/" rel="alternate"></link><published>2013-08-28T10:00:00-05:00</published><updated>2013-08-28T10:00:00-05:00</updated><author><name>Erik Paulson</name></author><id>tag:blog.unit1127.com,2013-08-28:/blog/2013/08/28/benchmarks/</id><summary type="html">&lt;!-- PELICAN_BEGIN_SUMMARY --&gt;
 
+&lt;h3&gt;Asking the Right Questions&lt;/h3&gt;
+&lt;p&gt;I'm interested in benchmarking the HDFS NameNode, and to be able to understand the impact of different mixes of operations and workloads. As part of this, I've been reviewing Hadoop Benchmarks. I've been trying to limit my focus to benchmarks that make the HDFS their primary …&lt;/p&gt;</summary><content type="html">&lt;!-- PELICAN_BEGIN_SUMMARY --&gt;
 
 &lt;h3&gt;Asking the Right Questions&lt;/h3&gt;
 &lt;p&gt;I'm interested in benchmarking the HDFS NameNode, and to be able to understand the impact of different mixes of operations and workloads. As part of this, I've been reviewing Hadoop Benchmarks. I've been trying to limit my focus to benchmarks that make the HDFS their primary focus, as opposed to benchmarks that try to be representative of a MapReduce workload. &lt;/p&gt;
 &lt;p&gt;What follows in this post are a few thoughts on the challenges of trying to focus on the NameNode in an HDFS benchmark, a quick survey of about 10 different benchmarks, and some ideas as to what could be included in a new benchmark for a NameNode or its equivalent in a distributed file system.
-&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;&lt;/p&gt;
 &lt;h3&gt;Contents&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#onbenchmarking"&gt;On Benchmarking&lt;/a&gt;&lt;/li&gt;
@@ -130,15 +132,18 @@ Sequential Write Latency, Sequential or Random Read Latency, Sequential Write Th
 &lt;p&gt;Allowing the client to provide hints or outright requirements for what to call blocks or on which nodes to place blocks would make a trace replay much easier. For block identifiers, the NameNode would still be responsible for ensuring the ID is valid and not already in use. Then, rather than having to track what the NameNode decides to assign for a block identifier, the benchmark driver can just ensure that it got back what it expected. This extension is helpful for situations like HDFS Federation or Content-Addressable storage systems, where the ID of the block would not be under the control of the NameNode anyway. &lt;/p&gt;
 &lt;p&gt;As for host placement, the NameNode already allows for a pluggable API in the &lt;code&gt;BlockPlacementPolicy&lt;/code&gt; interface to decide where to place a block. Extending the API to allow the client to include hints is a reasonable extension, useful beyond a benchmark. &lt;/p&gt;
 &lt;h3&gt;Wrapping up&lt;/h3&gt;
-&lt;p&gt;We'll be updating this post as we find more benchmarks - please let &lt;a href="mailto:epaulson@unit1127.com"&gt;me&lt;/a&gt; know what I've missed! &lt;/p&gt;</summary></entry><entry><title>What this blog will be about</title><link href="http://epaulson.github.io/HadoopInternals/first-post.html" rel="alternate"></link><updated>2013-05-27T10:00:00-05:00</updated><author><name>Erik Paulson</name></author><id>tag:epaulson.github.io,2013-05-27:HadoopInternals/first-post.html</id><summary type="html">&lt;hr /&gt;
+&lt;p&gt;We'll be updating this post as we find more benchmarks - please let &lt;a href="mailto:epaulson@unit1127.com"&gt;me&lt;/a&gt; know what I've missed! &lt;/p&gt;</content></entry><entry><title>What this blog will be about</title><link href="http://blog.unit1127.com/blog/2013/05/27/first-post/" rel="alternate"></link><published>2013-05-27T10:00:00-05:00</published><updated>2013-05-27T10:00:00-05:00</updated><author><name>Erik Paulson</name></author><id>tag:blog.unit1127.com,2013-05-27:/blog/2013/05/27/first-post/</id><summary type="html">&lt;!-- PELICAN_BEGIN_SUMMARY --&gt;
 
+&lt;h3&gt;Some Motivation&lt;/h3&gt;
+&lt;p&gt;The other day, I woke up with what I thought would be a simple task: "Let's figure out how hard would it be to store the edit log of the Hadoop NameNode in a relational database." 
+After all, I knew the NameNode already had multiple options for storing …&lt;/p&gt;</summary><content type="html">&lt;!-- PELICAN_BEGIN_SUMMARY --&gt;
 
 &lt;h3&gt;Some Motivation&lt;/h3&gt;
 &lt;p&gt;The other day, I woke up with what I thought would be a simple task: "Let's figure out how hard would it be to store the edit log of the Hadoop NameNode in a relational database." 
 After all, I knew the NameNode already had multiple options for storing its edit log, either by putting in on disk itself, or by using the Quorum Journal Manager. 
 This should be task of just finding the right class and either slipping in a new subclass or implementing some interface. &lt;/p&gt;
 &lt;p&gt;Of course, nothing is ever that simple.
-&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;&lt;/p&gt;
 &lt;p&gt;We'll return to the relational database storage at some point in the future (and yes, I'm aware of &lt;a href="https://github.com/lalithsuresh/Scaling-HDFS-NameNode"&gt;KTHFS&lt;/a&gt;.) Today I want to write about a bigger problem.&lt;/p&gt;
 &lt;h3&gt;Developer Documentation&lt;/h3&gt;
 &lt;p&gt;Finding good information on the Hadoop internals is hard, which might seem strange given how much Hadoop information is out there. Just to be clear, there's a couple of things that I'm explicitly not looking for. &lt;/p&gt;
@@ -178,4 +183,4 @@ Dropping someone onto the Javadoc of the various classes doesn't help if you don
 &lt;p&gt;At the moment, this blog is hosted as static pages on github.&lt;/p&gt;
 &lt;p&gt;The static site generator is &lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The theme is a &lt;a href="https://github.com/duilio/pelican-octopress-theme"&gt;port of default Octopress theme to Pelican&lt;/a&gt; by Maurizio Sambati. It also includes patches from &lt;a href="http://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/"&gt;Jake Vanderplas&lt;/a&gt;, as well as a few shortcuts from his Makefile for publishing and his pelican plugins to support his patches. Jake's work on integrating IPython notebooks are what sold me on Pelican in the first place, so I'm especially grateful for his work. &lt;/p&gt;
-&lt;p&gt;Several posts will use &lt;a href="https://github.com/sudar/gist-it"&gt;Gist-it&lt;/a&gt; by Sudar Muthu, which is an awesome tool that runs on Google App Engine, and lets you embed specific sections of files on Github (say lines 30 to 50 of &lt;code&gt;foo.java&lt;/code&gt;) into a document, without having to copy that code into a stand-alone gist. At the moment it only links to files, and not specific versions of the file, which might make things problematic later but should be an easy fix if and when that day comes.&lt;/p&gt;</summary></entry></feed>
+&lt;p&gt;Several posts will use &lt;a href="https://github.com/sudar/gist-it"&gt;Gist-it&lt;/a&gt; by Sudar Muthu, which is an awesome tool that runs on Google App Engine, and lets you embed specific sections of files on Github (say lines 30 to 50 of &lt;code&gt;foo.java&lt;/code&gt;) into a document, without having to copy that code into a stand-alone gist. At the moment it only links to files, and not specific versions of the file, which might make things problematic later but should be an easy fix if and when that day comes.&lt;/p&gt;</content></entry></feed>

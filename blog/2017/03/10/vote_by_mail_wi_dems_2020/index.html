@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="author" content="Erik Paulson">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <title>Vote-by-Mail for the Wisconsin Presidential Democratic Primary in 2020 | Erik Paulson's Blog</title>
+
+        <link rel="alternate" type="application/atom+xml" title="Erik Paulson's Blog blog atom feed" href="/feeds/all.atom.xml" />
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <style>.codehilite .hll { background-color: #404040 }
+.codehilite .c { color: #999999; font-style: italic } /* Comment */
+.codehilite .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.codehilite .g { color: #d0d0d0 } /* Generic */
+.codehilite .k { color: #6ab825; font-weight: bold } /* Keyword */
+.codehilite .l { color: #d0d0d0 } /* Literal */
+.codehilite .n { color: #d0d0d0 } /* Name */
+.codehilite .o { color: #d0d0d0 } /* Operator */
+.codehilite .x { color: #d0d0d0 } /* Other */
+.codehilite .p { color: #d0d0d0 } /* Punctuation */
+.codehilite .cm { color: #999999; font-style: italic } /* Comment.Multiline */
+.codehilite .cp { color: #cd2828; font-weight: bold } /* Comment.Preproc */
+.codehilite .c1 { color: #999999; font-style: italic } /* Comment.Single */
+.codehilite .cs { color: #e50808; font-weight: bold; background-color: #520000 } /* Comment.Special */
+.codehilite .gd { color: #d22323 } /* Generic.Deleted */
+.codehilite .ge { color: #d0d0d0; font-style: italic } /* Generic.Emph */
+.codehilite .gr { color: #d22323 } /* Generic.Error */
+.codehilite .gh { color: #ffffff; font-weight: bold } /* Generic.Heading */
+.codehilite .gi { color: #589819 } /* Generic.Inserted */
+.codehilite .go { color: #cccccc } /* Generic.Output */
+.codehilite .gp { color: #aaaaaa } /* Generic.Prompt */
+.codehilite .gs { color: #d0d0d0; font-weight: bold } /* Generic.Strong */
+.codehilite .gu { color: #ffffff; text-decoration: underline } /* Generic.Subheading */
+.codehilite .gt { color: #d22323 } /* Generic.Traceback */
+.codehilite .kc { color: #6ab825; font-weight: bold } /* Keyword.Constant */
+.codehilite .kd { color: #6ab825; font-weight: bold } /* Keyword.Declaration */
+.codehilite .kn { color: #6ab825; font-weight: bold } /* Keyword.Namespace */
+.codehilite .kp { color: #6ab825 } /* Keyword.Pseudo */
+.codehilite .kr { color: #6ab825; font-weight: bold } /* Keyword.Reserved */
+.codehilite .kt { color: #6ab825; font-weight: bold } /* Keyword.Type */
+.codehilite .ld { color: #d0d0d0 } /* Literal.Date */
+.codehilite .m { color: #3677a9 } /* Literal.Number */
+.codehilite .s { color: #ed9d13 } /* Literal.String */
+.codehilite .na { color: #bbbbbb } /* Name.Attribute */
+.codehilite .nb { color: #24909d } /* Name.Builtin */
+.codehilite .nc { color: #447fcf; text-decoration: underline } /* Name.Class */
+.codehilite .no { color: #40ffff } /* Name.Constant */
+.codehilite .nd { color: #ffa500 } /* Name.Decorator */
+.codehilite .ni { color: #d0d0d0 } /* Name.Entity */
+.codehilite .ne { color: #bbbbbb } /* Name.Exception */
+.codehilite .nf { color: #447fcf } /* Name.Function */
+.codehilite .nl { color: #d0d0d0 } /* Name.Label */
+.codehilite .nn { color: #447fcf; text-decoration: underline } /* Name.Namespace */
+.codehilite .nx { color: #d0d0d0 } /* Name.Other */
+.codehilite .py { color: #d0d0d0 } /* Name.Property */
+.codehilite .nt { color: #6ab825; font-weight: bold } /* Name.Tag */
+.codehilite .nv { color: #40ffff } /* Name.Variable */
+.codehilite .ow { color: #6ab825; font-weight: bold } /* Operator.Word */
+.codehilite .w { color: #666666 } /* Text.Whitespace */
+.codehilite .mf { color: #3677a9 } /* Literal.Number.Float */
+.codehilite .mh { color: #3677a9 } /* Literal.Number.Hex */
+.codehilite .mi { color: #3677a9 } /* Literal.Number.Integer */
+.codehilite .mo { color: #3677a9 } /* Literal.Number.Oct */
+.codehilite .sb { color: #ed9d13 } /* Literal.String.Backtick */
+.codehilite .sc { color: #ed9d13 } /* Literal.String.Char */
+.codehilite .sd { color: #ed9d13 } /* Literal.String.Doc */
+.codehilite .s2 { color: #ed9d13 } /* Literal.String.Double */
+.codehilite .se { color: #ed9d13 } /* Literal.String.Escape */
+.codehilite .sh { color: #ed9d13 } /* Literal.String.Heredoc */
+.codehilite .si { color: #ed9d13 } /* Literal.String.Interpol */
+.codehilite .sx { color: #ffa500 } /* Literal.String.Other */
+.codehilite .sr { color: #ed9d13 } /* Literal.String.Regex */
+.codehilite .s1 { color: #ed9d13 } /* Literal.String.Single */
+.codehilite .ss { color: #ed9d13 } /* Literal.String.Symbol */
+.codehilite .bp { color: #24909d } /* Name.Builtin.Pseudo */
+.codehilite .vc { color: #40ffff } /* Name.Variable.Class */
+.codehilite .vg { color: #40ffff } /* Name.Variable.Global */
+.codehilite .vi { color: #40ffff } /* Name.Variable.Instance */
+.codehilite .il { color: #3677a9 } /* Literal.Number.Integer.Long */</style>
+        <style>body{margin:0;padding:0;font:15px 'Source Sans Pro',sans-serif;line-height:1.6em;color:#222;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}a{color:#007ee5;text-decoration:none}a:hover{color:#007ee5;text-decoration:none}header.main-header{background:none repeat scroll 0% 0% #2A66C0;margin-bottom:0px}header.main-header a{color:#fff}header.main-header .container{max-width:1000px}header.main-header .container nav a:hover{background-color:#2A66C0}article{margin:0}article header{margin-bottom:20px;padding-bottom:20px}article header h1{margin-bottom:2px;font-weight:700;color:#000}article header time{color:#9E9E9E;font-size:0.85em;float:right}article header time.left{color:#9E9E9E;font-size:0.85em;float:left}article p{font-size:16px;margin-bottom:20px;line-height:1.6em}article p.note{background:#f5f5f5;border:1px solid #ddd;padding:0.533em 0.733em}article p.update{background-color:#FEEFB3;border:1px solid #e6e68a;padding:0.533em 0.733em}article p.alert{background-color:#ffe2e2;border:1px solid #ffb2b2;padding:0.533em 0.733em}article ul,article ol{margin-top:0px;margin-bottom:25px}article li{font-size:16px;line-height:1.6em}article a:hover{text-decoration:underline}article blockquote{border-left:2px solid #c7c7cc;color:#666;margin:30px 0;padding:0 0 0 25px}article img{max-width:100%}article code{color:#333;background-color:#EEE;border-radius:0;font-size:13px}article .codehilite pre{border-radius:0;background-color:#202020;color:#d0d0d0}article .codehilite pre code{border:none}article .codehilite pre.bash{background-color:#000;color:#FFF}article .meta{font-size:11px}article .meta a:hover{text-decoration:none}article .meta div{margin-bottom:20px;display:block}article .meta a.tag{margin:0 10px 10px 0;padding:1px 12px;display:inline-block;font-size:12px;color:rgba(0,0,0,0.6);background:rgba(0,0,0,0.05)}article .meta a.tag:hover{background:rgba(0,0,0,0.15)}article .meta a.read_more,article .meta a.comments_btn{font-size:14px;font-weight:800;padding:10px 20px;color:#007EE5;background:#FFF;border:1px solid #007EE5}article .meta a.read_more:hover,article .meta a.comments_btn:hover{color:#FFF;background:#007EE5}.index{max-width:900px}.index article header h2{font-size:36px;margin-bottom:2px;font-weight:900}.index article header h2 a{color:#000}.index article header h2 a:hover{color:#007ee5;text-decoration:none}.index .separator{padding:40px 0 0 0;margin:0 0 40px 0;height:10px;border-bottom:solid 1px #CCC}.index .pagination{display:block;margin-bottom:100px}.index .pagination .left{text-align:right}.index .pagination .right{text-align:left}.index .pagination a{display:inline-block;border:2px solid #007EE5;margin:0 5px;padding:8px 20px;font-weight:bold;color:#007EE5}.index .pagination a:hover{color:#FFF;background:#007EE5}.post{max-width:900px}.post h2:before{content:"# ";font-weight:bold;color:#DDD}.post h3:before{content:"## ";font-weight:bold;color:#DDD}.post h4:before{content:"### ";font-weight:bold;color:#DDD}.post article .meta{margin:50px 0 100px}.list{max-width:900px}.list ul.double-list{margin:0 auto 60px;padding:0;list-style-type:none}.list ul.double-list li{padding:5px 0}.list ul.double-list li h2{font-size:1em;display:inline;font-weight:normal}.list ul.double-list li span{font-family:sans-serif;text-transform:uppercase;text-align:right;float:right;padding-top:3px;font-size:12px;color:#999}.full-width-content{padding-top:10px;padding-left:0px;padding-right:0px;margin-left:-20px;margin-right:-20px}.col-xs-1,.col-sm-1,.col-md-1,.col-lg-1,.col-xs-2,.col-sm-2,.col-md-2,.col-lg-2,.col-xs-3,.col-sm-3,.col-md-3,.col-lg-3,.col-xs-4,.col-sm-4,.col-md-4,.col-lg-4,.col-xs-5,.col-sm-5,.col-md-5,.col-lg-5,.col-xs-6,.col-sm-6,.col-md-6,.col-lg-6,.col-xs-7,.col-sm-7,.col-md-7,.col-lg-7,.col-xs-8,.col-sm-8,.col-md-8,.col-lg-8,.col-xs-9,.col-sm-9,.col-md-9,.col-lg-9,.col-xs-10,.col-sm-10,.col-md-10,.col-lg-10,.col-xs-11,.col-sm-11,.col-md-11,.col-lg-11,.col-xs-12,.col-sm-12,.col-md-12,.col-lg-12{padding-right:0px;padding-left:0px}</style>
+
+
+        <meta property="og:title" content="Vote-by-Mail for the Wisconsin Presidential Democratic Primary in 2020" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="images/VoteByMail.jpg" />
+        <meta property="og:url" content="http://blog.unit1127.com/blog/2017/03/10/vote_by_mail_wi_dems_2020/" />
+        <meta property="og:description" content="The Democratic Party of Wisconsin is at least going to talk about switching to Vote-By-Mail for the 2020 primary." />
+        <meta property="og:locale" content="" />
+        <meta property="og:site_name" content="Erik Paulson&#39;s Blog" />
+        <meta property="article:published_time" content="2017-03-10" />
+        <meta property="article:section" content="2017" />
+
+    </head>
+
+    <body>
+        <header class="navbar navbar-static-top bs-docs-nav main-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/" title="Home" class="title">Erik Paulson</a></li>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                    <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/pages/about.html" title="About">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="wrap">
+<div class="container post">
+    <article>
+        <header>
+            <h1>Vote-by-Mail for the Wisconsin Presidential Democratic Primary in 2020</h1>
+            <time datetime="article.date.isoformat()" pubdate>Fri 10 March 2017</time>
+        </header>
+
+        <div class="article_content">
+            <p>As the Chair of the Democratic Party of the 2nd Congressional District, I sit on the statewide Administrative Committee of the Democratic Party of Wisconsin. This is the memo I've provided to the committee as background for the motion I intend to make, to start a statewide discussion on switching to vote-by-mail in the Presidential Primary </p>
+<hr>
+<h3>The actual motion</h3>
+<blockquote>
+<p>"The Democratic Party of Wisconsin hereby declares its intention to conduct (and run, if necessary) its Presidential Preference Primary in 2020 as a Vote-by-Mail election. A final determination will be made by the Administrative Committee no later than 31 December 2018, pending the outcomes of the DNC Unity Reform Commission and extensive discussions with Wisconsin Democrats, Democratic County Clerks and other Democratic Wisconsin elected officials, and other interested stakeholders. DPW staff shall begin work by collecting background information, and consulting with DNC staff and counterparts in other States"</p>
+</blockquote>
+<p>To my friends on the Admin Committee - an important note (because I can see the look on your faces now): <strong>It is 100% OK to vote for this now and still have (many) questions about it.</strong> </p>
+<p>Think of this as deciding to take on a big goal, like running a marathon. I know I couldn’t run a marathon today, and truth be told I don’t even know if I ever could. But the way to tackle a goal like this is to be serious about saying ‘This is something we want to do’ and getting out there and starting to train, and not just thinking about it. </p>
+<p>What is our ultimate goal: we want to increase the number of people who vote in elections. When more people vote, it’s good for Democrats. It’s also good for Democracy. One of the newer trends in elections is voting by mail. Colorado, Washington State, and Oregon all run their elections as vote by mail. California already has a significant portion of its votes cast by mail, and starting in 2018 will shift entirely to vote-by-mail. </p>
+<p>Unfortunately, Scott Walker, Robin Vos, and the rest of the GOP know that the more people that vote, the better it is for Democrats, and so they’ve been working to make it harder to vote in elections. There have been some victories in the courts to push back against the GOP agenda, but we know that the Republicans will continue to try to deny people the vote - especially people who they think are more likely to vote Democratic. </p>
+<p>There is, however, one election that the Democratic Party controls - or more accurately, one election that we can decide on how to participate, our Presidential Preference Primary. </p>
+<p>The State of Wisconsin runs an “Open Primary”, but the Democratic Party is under no obligation to use the state-run primary if it so chooses - we’ve got a Supreme Court case saying so in Democratic Party of United States v. Wisconsin ex rel. La Follette from 1980. (Yes, the Democratic Party sued Doug La Follette, and won) The Majority of the Court held that if the DNC-approved DPW process conflicted with the State of Wisconsin’s process, the DNC was free to accept the DPW process rather than that of the State. (Rehnquist dissented and ruled against the Democratic Party.) In practice, what has happened since 1980 is that the DNC grumbles but formally approves using the State process every four years - these are the ‘waivers’ that we ask for during our plan submission. They have done this in the past because the State of Wisconsin has acted in good faith to try to ensure as many voters as possible could participate. That good faith from the State is harder to find today. </p>
+<p>The <a href="http://s3.amazonaws.com/uploads.democrats.org/Downloads/Unity_Reform_Commission_Resolution.pdf">Unity Reform Commission</a> (and <a href="https://my.democrats.org/page/signup/unity-reform-commission">here for feedback</a>) was established by the DNC after the 2016 primary as a joint Clinton/Sanders body and charged with reforming Superdelegates, caucuses, and primaries. Many of the ways the various states select their delegates to the National Convention are strikingly non-small-d-democratic: very small caucuses with limited participation or primary elections with narrow windows to vote in. The commission is explicitly charged with expanding access to the primary process:</p>
+<blockquote>
+<p>RESOLVED FURTHER: That the Unity Reform Commission shall consider and make appropriate recommendations regarding revisions to the Delegate Selection Rules for the 2020 Democratic National Convention with respect to the manner of voting used during the presidential nominating process with a goal of increasing voter participation and inclusion through grassroots engagement of the Party’s voter base during and in-between presidential election cycles. The Commission shall make recommendations to encourage the expanded use of primary elections.&lt;...&gt;</p>
+<p>RESOLVED FURTHER: That the Unity Reform Commission shall make recommendations to encourage the involvement in all elections of unaffiliated or new voters who seek to join the Democratic Party including through same-day registration and re-registration.</p>
+</blockquote>
+<p>Wisconsin is likely to be held up by the commission as a state that other states should aspire to: strong participation (over a million votes were cast in our primary), ease of access, and same-day registration. But Wisconsin should not be content to simply be the model, we should aim to be the leader and while others are catching up, we should explore what more we could do. </p>
+<p>It’s said that the States are the laboratories of democracy, but it’s long been clear that our Governor does not care for science, and at least with voting rights the GOP only intends to go backwards. Therefore, let’s move without them where we can and try a new bold new experiment: let’s run a vote-by-mail election for the 2020 President Preference Primary. We will signal to the DNC Unity Reform Commission that we expect the new DNC rules to be compatible with our plan, and furthermore that we would like their assistance to develop what could become a national model. </p>
+<p>If we are successful, we may even be able to force the WI GOP’s hand. Perhaps after voting by mail in our Primary, Wisconsinites will ask “Wait, that was easy, why aren’t we doing this for every election?” As we’ve seen again and again, actual experience with something tends to increase acceptance and build expectations.  (Hello Obamacare)</p>
+<p>This is, no doubt, a daunting task. There were a million votes cast in 2016, and our aim should be to get more votes in 2020. It will take significant effort for planning and be expensive - postage and printing alone may exceed a million dollars, and it will take a significant investment in staff.</p>
+<p>But that money is out there: If Jill Stein can raise $8M for a recount that no one had any expectation of making a difference, we can raise the money for a better Democracy. This is the sort of activity that we believe can be a fundraising success with small, grassroots donors who are willing to step up for specific asks.</p>
+<p>There are plenty of other challenges - I’ll list a few so we don’t need to debate them in March of 2017, and this list is not exhaustive, but these and others will need to be part of our wider conversation over the next 20 months:</p>
+<ul>
+<li>
+<p>The GOP will likely not pull the Democratic space from the primary ballot nor do us any other favors in explaining what is happening. We can decline to put any names on the State’s ballot but it will still could be confusing to Wisconsin voters who somehow won’t hear about the change. </p>
+</li>
+<li>
+<p>If Democratic Primary vote-by-mail voters decide to skip the Spring election, other downballot candidates will suffer. In particular, in 2020 the State Supreme Court race will be Dan Kelly’s first time before the voters after Walker appointed him to fill Prosser’s seat. </p>
+</li>
+<li>
+<p>A voter who corrects their registration in the spring for a Presidential primary is using an important tool for preparing for the fall. We will be able to mitigate some of this, but it is possible some voters will be discouraged from voting in November if they weren’t already registered. </p>
+</li>
+<li>
+<p>A separate election increases the probability that someone will vote in both the Democratic and Republican primaries. The “crossover” vote is usually not helpful in selecting a Party’s strongest candidate, though we have this problem anyway in 2020 if the GOP does not have an interesting primary on their side in case soon-to-be-President Pence doesn’t run for his own full term. </p>
+</li>
+<li>
+<p>Election administration is hard overall. Do we use the State’s voterfile as a starting point or only people who register with us? How do we get military ballots to overseas voters in time? Do we have drop-off locations as well or only vote-by-mail? </p>
+</li>
+<li>
+<p>Voter contact and GOTV for vote-by-mail is a different ballgame and one not a lot of people in Wisconsin have much experience with. </p>
+</li>
+<li>
+<p>The jury is still out a bit on vote-by-mail. The most progressive states in the County are embracing it and there are clear positives, but the haven’t been a lot of elections to study yet so the data is still a bit sparse, and it’s not a slam-dunk that it is better, or at least it may not be uniformly better for all groups. There is data to suggest that while some people like the convenience of vote-by-mail, others prefer the certainty and sense of accomplishment by showing up and doing one’s civic duty. (And you get to wear the sticker on a day when everyone else is wearing the sticker)  </p>
+</li>
+</ul>
+<p>On the plus side, some non-obvious things to consider:</p>
+<ul>
+<li>
+<p>We fundamentally cannot rely on the State of Wisconsin to ensure that all Democrats can participate in elections. This was once a given but it is no longer true. If we want an election that we’re sure is open to all, and people are not locked out due to overzealous voter ID or registration requirements, we need to be prepared to run our own election.</p>
+</li>
+<li>
+<p>GOTV in a vote-by-mail means we don’t have to get people to actually show up at the polls. The engagement can become much more personal at the doors (you can encourage people to actually vote right then and there!) and that will pay off for the fall. GOTV over a period of days is also a new prospect with new tactics that could be more successful.</p>
+</li>
+<li>
+<p>The staff we build up for running the primary can roll right into the general election with the onboarding already completed, and being able to give a longer contract will help in staff recruiting.</p>
+</li>
+<li>
+<p>As a laboratory of democracy, we can conduct experiments in election administration and voter registration. Because we’re like Apple and can control more of the system, we can look for ways to make the overall system more seamless. We can prepare ballots in more languages than the state does, for example, or look to see how to connect online advertising with registration. Wisconsin was once a place where ideas were invented and adopted by other states. Nationally, the Democratic Party is looking to advance on these issues.  </p>
+</li>
+<li>
+<p>We can work with partners in our primary that we cannot during the general election, and reach communities that we miss now. Forget souls-to-the-polls, we can help folks vote right outside the Church.</p>
+</li>
+</ul>
+<p>Vote-by-mail is an audacious goal, and we will never develop a successful plan unless we begin a statewide conversation, and we’ll never get a serious conversation unless there is a perception that this is a serious possibility. We should have some vision and say “we’re not exactly sure how to get there yet but let’s work together to get there.” Being serious about actually conducting a vote-by-mail process means that we can engage with experts who know that it will be worth their time to help us design a process.  We need a debate where people ask tough questions, because we likely do not yet even know what we don’t know. We want this debated in newspapers and Democratic Party meetings and in gas stations and diners around the state, and we want people to have one thing in mind: “The Democrats are trying to help people like me vote. Is this the way to do it?”</p>
+<p>Ultimately, the Democratic Party should be seen as the ones working on how to get more people to vote, and nationally, the Democratic Party is looking for new ideas for increasing participation. Voting for this resolution is one way to do that and start to sound out a new idea. If passed, this is not the last vote this body will take on the issue, merely the first step of a journey. </p>
+        </div>
+
+        <div class="meta">
+            <div>
+            </div>
+        </div>
+    </article>
+</div>
+
+<style type="text/css">
+{
+    max-width: 700px;
+}
+
+.text_cell .prompt {
+    display: none;
+}
+
+div.cell {
+    padding: 0;
+}
+
+div.text_cell_render {
+    padding: 0;
+}
+
+div.prompt {
+    font-size: 13px;
+}
+
+div.input_prompt {
+    padding: .7em 0.2em;
+}
+
+div.output_prompt {
+    padding: .4em .2em;
+}
+
+div.input_area {
+    margin: .2em 0.4em;
+    max-width: 580px;
+}
+
+table.dataframe {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+table.dataframe th, td {
+    padding: 4px;
+    text-align: left;
+}
+
+pre code {
+    background-color: inherit;
+}</style>
+
+        </div>
+    </body>
+</html>
